@@ -8,7 +8,10 @@ git diff
 git diff --cached
 git log
 git log --oneline
-
+//each time you wish to change a password you will be required to get a new RSA key
+//RSA key linked to your github account and your machine, kinda your password for commiting changes to remote repo
+// -C means comment http://en.wikipedia.org/wiki/Ssh-keygen
+ssh-keygen -t rsa -C "koustubhdwivedy@gmail.com"
 git remote add  <name of remote repo> SSH key
 git remote show
 git remote rm <name of repo>
