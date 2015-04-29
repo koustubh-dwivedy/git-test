@@ -30,4 +30,4 @@ git checkout <branch name>
 git clone <SSH link/key>
 // For cloning
 git branch -d <branch name>
-// deleting branch
+git merge <branch name>
