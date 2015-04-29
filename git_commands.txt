@@ -31,3 +31,4 @@ git clone <SSH link/key>
 // For cloning
 git branch -d <branch name>
 // deleting branch
+q
