@@ -1,0 +1,33 @@
+git init <name of dir>
+git help <keyword>
+git add .
+git add <filename>
+Shift+z+z helpful sometimes
+git commit -m "message"
+git diff
+git diff --cached
+git log
+git log --oneline
+//each time you wish to change a password you will be required to get a new RSA key
+//RSA key linked to your github account and your machine, kinda your password for commiting changes to remote repo
+// -C means comment http://en.wikipedia.org/wiki/Ssh-keygen
+ssh-keygen -t rsa -C "koustubhdwivedy@gmail.com"
+git remote add  <name of remote repo> SSH key
+git remote show
+git remote rm <name of repo>
+// AS far as I have understood, the RSA key buisness is for authenticating logging in into github/any git website.
+// Can be understood as instead of a window popping up asking username and password, you create an RSA key and LINK it with your account.
+// This ensures that only the person creating the can access his/her github account (on cloud) and store it into settings.
+// Once this link is established, it is as if login successful and you can do whatsoever you want.
+//  Therefore any person having the SSH local file in his/her PC and knowing the password (bare minimum and sufficient) has as much privelages as the owner.
+// (given that owner has linked his/her public key to his/her account)!
+git branch
+// For viewing all the branches in the repo
+git branch <branch name>
+// For creating a branch
+git checkout <branch name>
+// Changing active branch
+git clone <SSH link/key>
+// For cloning
+git branch -d <branch name>
+// deleting branch
