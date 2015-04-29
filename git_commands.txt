@@ -21,4 +21,12 @@ git remote rm <name of repo>
 // Once this link is established, it is as if login successful and you can do whatsoever you want.
 //  Therefore any person having the SSH local file in his/her PC and knowing the password (bare minimum and sufficient) has as much privelages as the owner.
 // (given that owner has linked his/her public key to his/her account)!
- 
+git branch
+// For viewing all the branches in the repo
+git branch <branch name>
+// For creating a branch
+git checkout <branch name>
+// Changing active branch
+git clone <SSH link/key>
+// For cloning
+
