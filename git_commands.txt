@@ -1,0 +1,14 @@
+git init <name of dir>
+git help <keyword>
+git add .
+git add <filename>
+Shift+z+z helpful sometimes
+git commit -m "message"
+git diff
+git diff --cached
+git log
+git log --oneline
+
+git remote add  <name of remote repo> SSH key
+git remote show
+git remote rm <name of repo>
