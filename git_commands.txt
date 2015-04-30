@@ -32,3 +32,26 @@ git clone <SSH link/key>
 git branch -d <branch name>
 git merge <branch name>
 git pull origin master
+
+
+/*
+git is like UNIX. User friendly but picky about its friends. It's about as powerful and as user friendly as a shell pipeline.
+
+That being said, once you understand its paradigms and concepts, it has the same zenlike clarity that I've come to expect from UNIX command line tools. You should consider taking some time off to read one of the many good git tutorials available online. The Pro Git book is a good place to start.
+
+To answer your first question.
+
+What is git remote add ...
+
+As you probably know, git is a distributed version control system. Most operations are done locally. To communicate with the outside world, git uses what are called remotes. These are repositories other than the one on your local disk which you can push your changes into (so that other people can see them) or pull from (so that you can get others changes). The command git remote add origin git@github.com:peter/first_app.gitcreates a new remote called origin located at git@github.com:peter/first_app.git. Once you do this, in your push commands, you can push to origin instead of typing out the whole URL.
+
+What is git push origin master
+
+This is a command that says "push the commits in the local branch named master to the remote named origin". Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
+
+Now about transports (i.e. what git://) means. Remote repository URLs can be of many types (file://, https:// etc.). Git simply relies on the authentication mechanism provided by the transport to take care of permissions and stuff. This means that for file:// URLs, it will be UNIX file permissions, etc. The git:// scheme is asking git to use its own internal transport protocol, which is optimised for sending git changesets around. As for the exact URL, it's the way it is because of the way github has set up its git server.
+
+Now the verbosity. The command you've typed is the general one. It's possible to tell git something like "the branch called master over here is local mirror of the branch called foo on the remote called bar". In git speak, this means that master tracks bar/foo. When you clone for the first time, you will get a branch called master and a remote called origin (where you cloned from) with the local master set to track the master on origin. Once this is set up, you can simply say git push and it'll do it. The longer command is available in case you need it (e.g. git push might push to the official public repo and git push review master can be used to push to a separate remote which your team uses to review code). You can set your branch to be a tracking branch using the --set-upstream option of the git branch command.
+
+I've felt that git (unlike most other apps I've used) is better understood from the inside out. Once you understand how data is stored and maintained inside the repository, the commands and what they do become crystal clear. I do agree with you that there's some elitism amongst many git users but I also found that with UNIX users once upon a time, and it was worth ploughing past them to learn the system. Good luck!
+/*
