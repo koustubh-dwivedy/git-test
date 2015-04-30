@@ -1,2 +1,2 @@
 # hello world! 
-I am Koustubh Dwivedy, an aero freshie and to-be sophie attending IIT Bombay, known to be India's best engineering college!
+This is a repo which was utilized for learning Gitand GitHub by me. It also contains a .txt file of some important git bash commands. Feel free to utilize them!
