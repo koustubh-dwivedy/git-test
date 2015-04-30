@@ -39,7 +39,8 @@ git pull origin master
 git pull is composed of -> (for git bash)
 	git fetch origin <or name of remote repo>
 	git merge origin/master
-	// git merge origin/master represents the fetched 
+	// git merge origin/master merges the fetched remote repo with the branch you are working on.
+	// HAHA, clever, NOTE that as you are working only on one branch at a time, therefore merge required to be done only on that branch. Rest branches are directly copy pasted.
 git pull is composed of -> (for git GUI windows)
 	git fetch origin <or name of remote repo>
 	git rebase  
