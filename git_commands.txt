@@ -45,6 +45,11 @@ git pull is composed of -> (for git GUI windows)
 	git fetch origin <or name of remote repo>
 	git rebase  
 
+git checkout v1.0
+git checkout f3c5fc99ac7d820a12f1e2fb66d28d0d47bee336 // for checkingout to previous commits
+
+
+
 /*
 git is like UNIX. User friendly but picky about its friends. It's about as powerful and as user friendly as a shell pipeline.
 
