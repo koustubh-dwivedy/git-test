@@ -46,8 +46,9 @@ git pull is composed of -> (for git GUI windows)
 	git rebase  
 
 git checkout v1.0
-git checkout f3c5fc99ac7d820a12f1e2fb66d28d0d47bee336 // for checkingout to previous commits
-
+git checkout f3c5fc99ac7d820a12f1e2fb66d28d0d47bee336 
+// for checkingout to previous commits
+// These HASHES can be known through git log
 
 
 /*
