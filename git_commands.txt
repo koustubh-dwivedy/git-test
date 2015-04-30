@@ -33,6 +33,16 @@ git branch -d <branch name>
 git merge <branch name>
 git pull origin master
 
+// Alwsys do a git pull before a git push. This doesn't modify yourcurrent changes, but ensures that your local repo=remote repo + your edited work.
+// Merge conflicts do come while pulling too!
+
+git pull is composed of -> (for git bash)
+	git fetch origin <or name of remote repo>
+	git merge origin/master
+	// git merge origin/master represents the fetched 
+git pull is composed of -> (for git GUI windows)
+	git fetch origin <or name of remote repo>
+	git rebase  
 
 /*
 git is like UNIX. User friendly but picky about its friends. It's about as powerful and as user friendly as a shell pipeline.
